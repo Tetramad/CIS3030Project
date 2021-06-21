@@ -1,15 +1,15 @@
+/**
+ * 메인 클래스.
+ */
 public class Main {
+    /**
+     * 진입점(Entry Point).
+     * 어플리케이션에 필요한 인스턴스를 생성하고, 의존성을 주입해준다.
+     * 초기화면을 실행한다.
+     * @param args
+     * 아무런 역할을 하지 않는다.
+     */
     public static void main(String[] args) {
-//        String path = "C:\\Users\\윤경윤\\Desktop\\대학생 윤경윤\\3-1\\소프트웨어공학론\\소공론 프로젝트\\11주차 사용자인터페이스\\데이터저장.csv";    // 파일 경로 지정
-//        List<List<String>> list = CSV.readToList(path);
-//        for(int i=0; i<list.size(); i++) {
-//            List<String> line = list.get(i);
-//            for(int j=0; j<line.size(); j++) {
-//                System.out.print(line.get(j)+" ");
-//            }
-//            System.out.println();
-//        }
-
         LocationInputScreen locationInputScreen = new LocationInputScreen();
         LocationMapScreen locationMapScreen = new LocationMapScreen();
         MenuScreen menuScreen = new MenuScreen();

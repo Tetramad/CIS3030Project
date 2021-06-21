@@ -5,6 +5,11 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.Vector;
 
+/**
+ * 테마 지도 화면
+ *
+ * 생성 후 사용하기 전에 반드시 {@link #initialize} 메소드를 호출해야 한다.
+ */
 public class ThemeMapScreen {
     private JFrame frameMain;
     private JPanel panelMain;
@@ -15,8 +20,20 @@ public class ThemeMapScreen {
     private ImagePanel map;
     private ThemeScreen themeScreen;
 
+    /**
+     * 기본 생성자
+     */
     public ThemeMapScreen() {}
 
+    /**
+     * 화면을 보이게 한다.
+     * @param user
+     * 사용자 위치 정보
+     * @param themeTag
+     * 선택된 테마 종류
+     * @param places
+     * 표시할 장소 목록
+     */
     public void show(UserLocation user, ThemeTag themeTag, Collection<Place> places) {
         frameMain = new JFrame("THEME");
         frameMain.setContentPane(panelMain);
@@ -63,6 +80,11 @@ public class ThemeMapScreen {
 
     }
 
+    /**
+     * 의존성 주입을 위한 초기화 메소드
+     * @param themeScreen
+     * 테마 선택 화면
+     */
     public void initialize(ThemeScreen themeScreen) {
         this.themeScreen = themeScreen;
 
