@@ -15,7 +15,10 @@ public class LocationInputScreen {
     public LocationInputScreen() { }
 
     public void show() {
+
+        frameMain.setLocationRelativeTo(null);
         frameMain.setVisible(true);
+        frameMain.setBounds(400,200,500,300);
     }
 
     private void addListeners() {

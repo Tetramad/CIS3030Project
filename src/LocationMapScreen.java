@@ -21,7 +21,9 @@ public class LocationMapScreen {
         map = MapInformation.addMapImage(panelMap);
         MapInformation.addMarkerImage(map, userLocation.getUserLocation());
         frameMain.pack();
+        frameMain.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frameMain.setVisible(true);
+
     }
 
     private void addListeners() {
