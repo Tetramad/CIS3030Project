@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -23,6 +24,7 @@ public class ThemeScreen {
         frameMain.pack();
         frameMain.setLocationRelativeTo(null);
         frameMain.setVisible(true);
+        frameMain.setBounds(400,200,500,300);
     }
 
     public void initialize(MenuScreen menuScreen, ThemeControl themeControl) {

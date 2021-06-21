@@ -5,8 +5,8 @@ public class MenuScreen {
     private JFrame frameMain;
     private JPanel panel1;
     private JButton buttonTheme;
-    private JButton buttonConvenientFacilitiesButton;
-    private JButton buttonUserCommentButton;
+    private JButton 편의시설Button;
+    private JButton 사용자의견Button;
     private JButton buttonReturn;
     private LocationInputScreen locationInputScreen;
     private ThemeScreen themeScreen;
@@ -22,6 +22,7 @@ public class MenuScreen {
         frameMain.pack();
         frameMain.setLocationRelativeTo(null);
         frameMain.setVisible(true);
+        frameMain.setBounds(400,200,500,300);
     }
 
     public void initialize(LocationInputScreen locationInputScreen, ThemeScreen themeScreen) {
