@@ -37,7 +37,7 @@ public class PlaceResource {
      */
     public void initialize() {
         places = new ArrayList<Place>();
-        List<List<String>> list = CSV.readToList("데이터저장.csv");
+        List<List<String>> list = CSV.readToList("data/데이터저장.csv");
         for(int i = 1; i < list.size(); i++) {
             List<String> line = list.get(i);
             String name = line.get(0);

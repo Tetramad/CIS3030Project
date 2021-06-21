@@ -24,7 +24,7 @@ public class MapInformation {
      * 추가한 ImagePanel 객체
      */
     public static ImagePanel addMapImage(JPanel panelMap) {
-        ImagePanel map = new ImagePanel("Map.png");
+        ImagePanel map = new ImagePanel("img/Map.png");
         map.setLayout(null);
         panelMap.add(map, BorderLayout.CENTER);
         return map;
@@ -38,7 +38,7 @@ public class MapInformation {
      * 마커 이미지 패널을 추가할 위치(위도, 경도 기준)
      */
     public static void addMarkerImage(ImagePanel map, Location location) {
-        ImagePanel marker = new ImagePanel("Marker.png");
+        ImagePanel marker = new ImagePanel("img/Marker.png");
         map.add(marker);
         Insets insets = map.getInsets();
         int left = (int)Math.round((location.getLongitude() - topLeftCorner.getLongitude()) / (bottomRightCorner.getLongitude() - topLeftCorner.getLongitude()) * map.getWidth());
